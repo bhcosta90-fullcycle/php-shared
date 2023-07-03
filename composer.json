@@ -18,6 +18,12 @@
         "ramsey/uuid": "^4.7",
         "rakit/validation": "^1.4"
     },
+    "scripts": {
+        "test": [
+            "./vendor/bin/pest --parallel --processes=10",
+            "./vendor/bin/infection --test-framework=pest"
+        ]
+    },
     "require-dev": {
         "pestphp/pest": "^2.8",
         "mockery/mockery": "^1.6",
